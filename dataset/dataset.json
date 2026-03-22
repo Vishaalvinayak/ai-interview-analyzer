@@ -1,0 +1,884 @@
+[
+  {
+    "id": 1,
+    "question": "Explain REST API and its principles",
+    "answer": "REST is an architectural style for web services that uses HTTP methods. It's based on stateless communication where each request contains all necessary information. Key principles include: using standard HTTP methods like GET for retrieval, POST for creation, PUT for updates, and DELETE for removal. Resources are identified by URLs, and responses are typically in JSON format. For example, GET /api/users/123 retrieves user 123, while POST /api/users creates a new user. In my recent project, I built a RESTful API for an e-commerce platform using Node.js and Express, implementing proper status codes and authentication.",
+    "label": "strong",
+    "score": 88
+  },
+  {
+    "id": 2,
+    "question": "Explain REST API and its principles",
+    "answer": "REST API is about web services. It uses HTTP methods like GET and POST. You can use it to get data from servers. It's stateless which means each request is independent. I've used REST APIs before in some projects.",
+    "label": "average",
+    "score": 55
+  },
+  {
+    "id": 3,
+    "question": "Explain REST API and its principles",
+    "answer": "I think REST is something about APIs. Maybe it uses HTTP? Not really sure about the details.",
+    "label": "weak",
+    "score": 20
+  },
+  {
+    "id": 4,
+    "question": "What is the difference between SQL and NoSQL databases?",
+    "answer": "SQL databases are relational and use structured tables with predefined schemas. They follow ACID properties ensuring data consistency and support complex queries with JOIN operations. Examples include MySQL, PostgreSQL, and Oracle. NoSQL databases are non-relational, offering flexible schemas and horizontal scalability. They excel at handling unstructured data and high-traffic applications. Types include document stores like MongoDB, key-value stores like Redis, and column-family stores like Cassandra. In my previous role, we migrated from MySQL to MongoDB for our analytics service because we needed to handle rapidly changing data structures and scale to millions of documents.",
+    "label": "strong",
+    "score": 92
+  },
+  {
+    "id": 5,
+    "question": "What is the difference between SQL and NoSQL databases?",
+    "answer": "SQL databases use tables and have fixed structure. NoSQL databases are more flexible and don't use tables. SQL is good for structured data and NoSQL is good for unstructured data. Examples are MySQL for SQL and MongoDB for NoSQL.",
+    "label": "average",
+    "score": 58
+  },
+  {
+    "id": 6,
+    "question": "What is the difference between SQL and NoSQL databases?",
+    "answer": "I guess SQL is the old one and NoSQL is newer? Not sure about the differences.",
+    "label": "weak",
+    "score": 15
+  },
+  {
+    "id": 7,
+    "question": "Explain Object-Oriented Programming concepts",
+    "answer": "Object-Oriented Programming is a paradigm based on objects that contain data and methods. The four main pillars are: Encapsulation (bundling data with methods that operate on it), Inheritance (creating new classes from existing ones), Polymorphism (objects taking multiple forms), and Abstraction (hiding complex implementation details). For instance, in a car rental system, I created a Vehicle base class with properties like speed and color, then inherited it to create Car and Motorcycle subclasses. Each subclass could override the drive() method differently, demonstrating polymorphism. This approach made the code maintainable and reusable.",
+    "label": "strong",
+    "score": 90
+  },
+  {
+    "id": 8,
+    "question": "Explain Object-Oriented Programming concepts",
+    "answer": "OOP is about using objects and classes. Main concepts are inheritance, polymorphism, encapsulation, and abstraction. Objects have properties and methods. You can create classes and make objects from them.",
+    "label": "average",
+    "score": 52
+  },
+  {
+    "id": 9,
+    "question": "Explain Object-Oriented Programming concepts",
+    "answer": "OOP is programming with objects. I think it has something to do with classes.",
+    "label": "weak",
+    "score": 18
+  },
+  {
+    "id": 10,
+    "question": "Describe a challenging project you worked on",
+    "answer": "I led development of a real-time inventory management system for a retail chain with 50+ stores. The main challenge was synchronizing stock levels across all locations within 2 seconds while handling 10,000+ transactions daily. We used WebSockets for real-time updates, Redis for caching, and PostgreSQL with read replicas for data consistency. When initial tests showed 5-second delays, I implemented database connection pooling and optimized our queries, reducing response time to under 1 second. The project taught me the importance of performance testing early and the value of incremental optimization. It's now processing 500,000+ transactions monthly with 99.9% uptime.",
+    "label": "strong",
+    "score": 95
+  },
+  {
+    "id": 11,
+    "question": "Describe a challenging project you worked on",
+    "answer": "I worked on a website for my college that had a lot of features. It was challenging because I had to learn new technologies. I used HTML, CSS, and JavaScript. There were some bugs but I fixed them. It took about 2 months to complete.",
+    "label": "average",
+    "score": 48
+  },
+  {
+    "id": 12,
+    "question": "Describe a challenging project you worked on",
+    "answer": "I made a calculator app. It was kinda hard but I did it.",
+    "label": "weak",
+    "score": 12
+  },
+  {
+    "id": 13,
+    "question": "How do you handle tight deadlines?",
+    "answer": "When facing tight deadlines, I employ a systematic approach that balances speed with quality. First, I break down the project into critical milestones and identify the minimum viable deliverable. During a recent sprint where we had only 48 hours to fix a production bug affecting 50,000 users, I immediately assembled a war room, delegated code review to senior developers, and implemented parallel testing streams. I maintained transparent communication with stakeholders about risks and progress every 4 hours. We successfully deployed the fix with zero downtime and implemented a post-mortem process that reduced similar incidents by 60%. I also negotiate timeline expectations upfront and push back diplomatically when deadlines compromise product integrity.",
+    "label": "strong",
+    "score": 92
+  },
+  {
+    "id": 14,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I prioritize ruthlessly using the Eisenhower Matrix to separate urgent-important tasks. When our team had one week to migrate 500GB of customer data to a new database system, I created a detailed Gantt chart with daily checkpoints. I automated repetitive tasks using Python scripts, which saved approximately 20 hours of manual work. Communication was key - I held 15-minute daily standups to identify blockers immediately. I also implemented a buddy system where team members reviewed each other's work in real-time rather than waiting for end-of-day reviews. This approach helped us complete the migration 2 days ahead of schedule with 99.9% data accuracy.",
+    "label": "strong",
+    "score": 89
+  },
+  {
+    "id": 15,
+    "question": "How do you handle tight deadlines?",
+    "answer": "My strategy involves early risk assessment and proactive stakeholder management. In my previous role, when we had a tight 3-week deadline to launch a new payment gateway integration, I immediately identified that third-party API documentation was incomplete - a potential showstopper. I escalated this on day one and arranged direct meetings with their engineering team. Meanwhile, I created mock APIs for our team to continue development in parallel. I also built buffer time into the schedule by identifying nice-to-have features that could be deferred to v2. This forward-thinking approach meant we delivered core functionality on time while managing expectations about advanced features. The key is treating tight deadlines as a project management challenge, not just a coding sprint.",
+    "label": "strong",
+    "score": 88
+  },
+  {
+    "id": 16,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I focus on maintaining code quality even under pressure because technical debt compounds future deadlines. During a critical security patch that needed deployment within 24 hours, I resisted the temptation to cut corners. Instead, I implemented automated testing that ran continuously during development. I also maintained pair programming throughout the sprint to catch issues immediately rather than in code review. For stress management, I took strategic 10-minute breaks every 2 hours to maintain mental clarity. The result was a successful deployment with zero rollback incidents. I've learned that sustainable velocity beats short-term heroics, and I communicate this philosophy to stakeholders when setting deadline expectations.",
+    "label": "strong",
+    "score": 87
+  },
+  {
+    "id": 17,
+    "question": "How do you handle tight deadlines?",
+    "answer": "Under pressure, I become highly structured. When faced with a 72-hour deadline to build a data visualization dashboard for an executive presentation, I started with a 30-minute planning session to define success criteria and technical approach. I used React component libraries instead of building from scratch, which saved two days of development time. I set up a staging environment immediately so stakeholders could see progress in real-time and provide early feedback. I also documented my work as I went rather than leaving it for the end, knowing that future tight deadlines would benefit from good documentation. This systematic approach allowed me to deliver a fully functional dashboard with 8 hours to spare for polish and testing.",
+    "label": "strong",
+    "score": 86
+  },
+  {
+    "id": 18,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I leverage automation and tooling to maximize efficiency. When our marketing team needed a customer analytics report system with a 5-day deadline, I evaluated existing BI tools rather than building from scratch. I selected Metabase, configured it in one day, and spent the remaining time on custom SQL queries and dashboard design. I also created a shared Slack channel for real-time Q&A, which eliminated email back-and-forth delays. By working smart rather than just working hard, we delivered ahead of schedule. I've found that the best way to handle tight deadlines is to invest time upfront in tool selection and process design rather than jumping straight into coding.",
+    "label": "strong",
+    "score": 85
+  },
+  {
+    "id": 19,
+    "question": "How do you handle tight deadlines?",
+    "answer": "When deadlines are tight, I communicate transparently about trade-offs. In a recent project with a two-week deadline for an e-commerce checkout flow, I presented stakeholders with three options: basic checkout (low risk), checkout with saved cards (medium risk), or checkout with one-click purchasing (high risk). We agreed on the medium-risk option and I created a risk register to track potential issues. I also implemented feature flags so we could disable problematic features without rolling back the entire release. This approach built stakeholder trust because they understood what they were getting and why. The project delivered on time with all core features functioning, and we added the advanced feature in the next sprint.",
+    "label": "strong",
+    "score": 84
+  },
+  {
+    "id": 20,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I use time-boxing and agile principles even in compressed timelines. During a 4-day sprint to fix critical accessibility issues before a legal deadline, I created 8-hour time boxes for different WCAG compliance areas. I used browser automation tools to identify issues quickly rather than manual testing. I also enlisted QA team members to test fixes in parallel with development, creating a continuous feedback loop. Documentation was handled through inline code comments and a running changelog rather than formal docs, saving hours. This structured approach helped us remediate 47 accessibility violations and achieve AA compliance just hours before the deadline.",
+    "label": "strong",
+    "score": 83
+  },
+  {
+    "id": 21,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I maintain calm under pressure and focus on what I can control. When tasked with building an API integration in 3 days, I immediately set up a testing environment and created a checklist of all endpoints to implement. I started with authentication and the most critical endpoints, ensuring core functionality first. I used Postman collections to document and test as I built, which doubled as API documentation. I also scheduled short demo sessions with the product manager at the end of each day to ensure alignment and catch misunderstandings early. This incremental validation approach meant no surprises at the end, and we delivered a fully functional integration that's been running in production for 6 months without major issues.",
+    "label": "strong",
+    "score": 82
+  },
+  {
+    "id": 22,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I think about the big picture and focus on delivering value. When we had one week to prepare for a product demo at a major conference, I identified that the frontend polish mattered more than backend optimization for this specific use case. I allocated 70% of time to UI/UX and 30% to ensuring the backend was stable enough for a demo. I also created a demo script and practiced it multiple times to identify potential failure points. This prioritization meant we had a stunning demo that won new business, and we spent the following sprint on backend improvements. Understanding the context and desired outcome is crucial when time is limited.",
+    "label": "strong",
+    "score": 81
+  },
+  {
+    "id": 23,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I try to work faster when deadlines are tight. I prioritize the most important tasks and focus on those first. I communicate with my team about progress and any issues that come up. Sometimes I work extra hours to make sure everything gets done on time. I also try to stay organized and keep track of what needs to be done. If there are problems, I ask for help from teammates. I usually make a list of tasks and check them off as I complete them.",
+    "label": "average",
+    "score": 58
+  },
+  {
+    "id": 24,
+    "question": "How do you handle tight deadlines?",
+    "answer": "When facing tight deadlines, I break the work into smaller pieces and tackle them one at a time. I make sure to communicate with stakeholders about realistic timelines. I focus on delivering the most critical features first and leave nice-to-have features for later. I've worked on several projects with tight deadlines and usually managed to deliver on time. I stay organized using task management tools and hold regular check-ins with the team to ensure everyone is on track.",
+    "label": "average",
+    "score": 62
+  },
+  {
+    "id": 25,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I handle tight deadlines by staying focused and avoiding distractions. I create a schedule and try to stick to it as much as possible. I prioritize tasks based on importance and urgency. Sometimes I skip breaks to get more work done. I also make sure to test my work thoroughly even when time is limited. Communication with the team is important, so I provide regular updates on my progress. I've successfully met most of my deadlines this way.",
+    "label": "average",
+    "score": 56
+  },
+  {
+    "id": 26,
+    "question": "How do you handle tight deadlines?",
+    "answer": "My approach to tight deadlines involves careful planning and time management. I assess what needs to be done and create a timeline with milestones. I communicate with team members and stakeholders regularly. If I encounter obstacles, I try to find solutions quickly or escalate when necessary. I also make sure to document my work as I go. In previous projects, this approach has helped me deliver quality work within the given timeframe. I believe that staying organized and maintaining open communication are key to meeting deadlines.",
+    "label": "average",
+    "score": 61
+  },
+  {
+    "id": 27,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I prioritize tasks and focus on the most critical ones first. I make a list and work through it systematically. I try to minimize meetings and interruptions during crunch time. I also work closely with my team to divide tasks efficiently. If the deadline seems unrealistic, I'll communicate that and try to negotiate. I've had experience with several tight deadline situations and have learned to stay calm and focused. Regular progress updates help keep everyone aligned.",
+    "label": "average",
+    "score": 59
+  },
+  {
+    "id": 28,
+    "question": "How do you handle tight deadlines?",
+    "answer": "When deadlines are tight, I focus on time management and prioritization. I use tools like Trello or Jira to track my tasks. I communicate with stakeholders about progress and any potential delays. I try to identify the minimum viable product and focus on that first. Additional features can be added later if time permits. I also make sure to allocate time for testing and bug fixes. This structured approach has worked well for me in past projects.",
+    "label": "average",
+    "score": 60
+  },
+  {
+    "id": 29,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I handle tight deadlines by working efficiently and staying organized. I break down large tasks into smaller, manageable pieces. I set realistic goals for each day and try to achieve them. I also maintain good communication with my team and manager. If I'm struggling to meet the deadline, I ask for help or additional resources. I've learned from experience that good planning and teamwork are essential for meeting tight deadlines successfully.",
+    "label": "average",
+    "score": 57
+  },
+  {
+    "id": 30,
+    "question": "How do you handle tight deadlines?",
+    "answer": "My strategy for tight deadlines includes prioritizing tasks, maintaining focus, and communicating effectively. I start by understanding what's most important and work on that first. I keep stakeholders informed about progress and any risks. I also try to build in some buffer time for unexpected issues. In my experience, staying calm under pressure and being adaptable are important skills. I've successfully delivered several projects under tight deadlines using this approach.",
+    "label": "average",
+    "score": 63
+  },
+  {
+    "id": 31,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I try to stay organized and work hard when deadlines are tight. I make lists of what needs to be done and check things off as I complete them. I communicate with my team about progress. Sometimes I work longer hours to finish on time. I also try to stay focused and avoid getting distracted. Overall, I do my best to meet deadlines even when they're challenging.",
+    "label": "average",
+    "score": 54
+  },
+  {
+    "id": 32,
+    "question": "How do you handle tight deadlines?",
+    "answer": "For tight deadlines, I focus on the most important tasks and try to complete them first. I stay in regular contact with my team and manager. I also try to be flexible and adjust my approach if something isn't working. I've worked on projects with tight timelines before and usually manage to deliver what's needed. Good communication and prioritization are key to handling deadline pressure effectively.",
+    "label": "average",
+    "score": 58
+  },
+  {
+    "id": 33,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I just try to work faster and focus more. Maybe work some extra hours if needed.",
+    "label": "weak",
+    "score": 22
+  },
+  {
+    "id": 34,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I'm not really sure, probably just do my best and hope everything works out. I guess I'd work overtime.",
+    "label": "weak",
+    "score": 18
+  },
+  {
+    "id": 35,
+    "question": "How do you handle tight deadlines?",
+    "answer": "Tight deadlines are stressful. I try to finish things on time but it's hard. Sometimes I ask for extensions.",
+    "label": "weak",
+    "score": 25
+  },
+  {
+    "id": 36,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I think I handle them okay. I just work faster and try not to get too stressed about it.",
+    "label": "weak",
+    "score": 20
+  },
+  {
+    "id": 37,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I don't really have a specific strategy. I just kind of deal with it as it comes.",
+    "label": "weak",
+    "score": 15
+  },
+  {
+    "id": 38,
+    "question": "How do you handle tight deadlines?",
+    "answer": "Deadlines make me nervous. I try my best but I'm not always successful at meeting them.",
+    "label": "weak",
+    "score": 19
+  },
+  {
+    "id": 39,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I guess I just work until it's done. Not sure what else to say about it.",
+    "label": "weak",
+    "score": 17
+  },
+  {
+    "id": 40,
+    "question": "How do you handle tight deadlines?",
+    "answer": "Maybe I'd prioritize things? I haven't really faced many tight deadlines so I'm not sure.",
+    "label": "weak",
+    "score": 23
+  },
+  {
+    "id": 41,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I think you just have to work hard and hope for the best. Time management probably helps.",
+    "label": "weak",
+    "score": 21
+  },
+  {
+    "id": 42,
+    "question": "How do you handle tight deadlines?",
+    "answer": "I don't know, probably just stress out and then somehow get it done.",
+    "label": "weak",
+    "score": 16
+  },
+  {
+    "id": 43,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git is a distributed version control system that revolutionized software development collaboration. At its core, Git tracks changes to files over time, allowing developers to work on features independently through branching, then merge changes back seamlessly. In my current role, we use a Git workflow where each feature gets its own branch from 'develop'. For example, when building a new authentication system, I created feature/oauth-integration, made 47 commits over two weeks, and submitted a pull request with comprehensive documentation. Git's distributed nature means every developer has the complete repository history locally, enabling offline work and making it nearly impossible to lose code. I use advanced Git features like interactive rebasing to clean commit history, cherry-picking to backport critical fixes, and bisect for debugging when issues arise. We've also implemented Git hooks for automated linting and testing before commits. The importance cannot be overstated - Git enables true parallel development, maintains code history for accountability, facilitates code review through pull requests, and serves as our single source of truth. Our team's productivity increased 40% after implementing proper Git workflows with protected branches and required code reviews.",
+    "label": "strong",
+    "score": 94
+  },
+  {
+    "id": 44,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git is essential for modern software development because it solves the fundamental problem of multiple people editing the same codebase simultaneously. Unlike older systems like SVN, Git's distributed architecture means there's no single point of failure. When our central GitHub server went down last year, our team continued working locally and pushed changes once it recovered - zero productivity loss. I use Git daily for version tracking, collaborative development, and deployment automation. For instance, our CI/CD pipeline triggers on specific Git tags, automatically deploying to staging when we push to 'develop' and to production on 'main' branch updates. Git's branching model enables us to maintain multiple release versions simultaneously. We support three product versions in production, each with its own maintenance branch, and can cherry-pick bug fixes across versions as needed. The commit history serves as documentation - I can trace any line of code back to the original commit, see the context of why it was written, and identify the author if clarification is needed. Git also enables powerful code archaeology through commands like 'git blame' and 'git log --follow', which have saved countless hours debugging legacy code.",
+    "label": "strong",
+    "score": 91
+  },
+  {
+    "id": 45,
+    "question": "Explain Git version control and its importance",
+    "answer": "Version control with Git is critical for several reasons. First, it provides a complete audit trail of all code changes. When a production bug occurs, we can use 'git bisect' to binary search through commits and identify exactly which change introduced the issue. Second, Git enables fearless refactoring - knowing I can always revert to a working state lets me experiment with architectural improvements without risk. Third, branching and merging facilitate code review culture. Every change in our codebase goes through a pull request where at least two team members review the code, discuss implementation decisions, and suggest improvements. This has dramatically improved code quality and knowledge sharing. Fourth, Git integrates with our entire development ecosystem - Jira for issue tracking, Jenkins for CI/CD, SonarQube for code quality, and Slack for notifications. When I push a commit with a Jira ticket number, it automatically links to the issue, updates status, and notifies stakeholders. I've also created custom Git aliases and hooks to streamline repetitive tasks, like automatically formatting code before commits or preventing pushes to protected branches.",
+    "label": "strong",
+    "score": 89
+  },
+  {
+    "id": 46,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git transforms how teams collaborate on code by providing a distributed, non-linear development workflow. In a recent project with eight developers across three time zones, Git was crucial for coordination. We used GitFlow methodology with 'main', 'develop', 'feature/*', 'release/*', and 'hotfix/*' branches. Each developer worked independently on features, and Git's merge capabilities handled conflicts intelligently. The importance extends beyond just tracking changes - Git serves as our collaboration platform, backup system, and deployment mechanism. Our infrastructure-as-code is versioned in Git, meaning we can rebuild our entire production environment from repository contents. We tag releases with semantic versioning, and if a critical issue arises in production, we can instantly see what changed between versions using 'git diff v2.3.1..v2.3.2'. Git also enables powerful workflows like feature flags stored in configuration files tracked by Git, allowing us to deploy code to production in a disabled state and enable features independently of deployments. This decoupling of deployment and release has been transformative for our delivery speed.",
+    "label": "strong",
+    "score": 88
+  },
+  {
+    "id": 47,
+    "question": "Explain Git version control and its importance",
+    "answer": "Understanding Git deeply has been a career multiplier for me. Beyond basic commits and pushes, I leverage advanced features like 'git rebase' to maintain clean commit history, 'git stash' for context switching between tasks, and 'git worktree' for working on multiple branches simultaneously. The importance of Git extends to disaster recovery - we've had instances where developers accidentally deleted critical files or pushed breaking changes. Git's reflog and dangling commits mean we've recovered code that seemed lost. Our Git repository is also our documentation system - we use conventional commits (feat:, fix:, docs:, etc.) which automatically generate changelogs. For open-source contributions, understanding Git pull request workflows, rebase vs merge strategies, and commit message best practices is essential. I've contributed to projects with strict Git hygiene requirements where each commit must be atomic and pass all tests independently. This discipline has made me a better developer because it forces intentional, well-documented changes rather than large, opaque commits. Git has also taught me the importance of good commit messages - I write them as if explaining to my future self why this change was necessary.",
+    "label": "strong",
+    "score": 87
+  },
+  {
+    "id": 48,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git is my daily driver for version control, and I consider it as fundamental as knowing your programming language. The branching model allows parallel feature development without stepping on each other's toes. Recently, I was working on a complex database migration while a colleague refactored the authentication system. Git enabled both workstreams to progress independently, and when we merged, conflicts were minimal and easy to resolve. The staging area is underutilized by many developers but incredibly powerful - it lets me craft commits that tell a story rather than just dumping all changes. I'll often use 'git add -p' to stage logical chunks separately, even from the same file. Git's integration with platforms like GitHub provides additional collaboration features - issues, project boards, wiki documentation, and CI/CD through Actions. The importance for deployment is huge - our production deployments are literally 'git pull' on the production server after all checks pass. This means our Git repository is the source of truth, and deployment is deterministic and auditable. We can also instantly rollback by checking out previous commits if issues arise.",
+    "label": "strong",
+    "score": 86
+  },
+  {
+    "id": 49,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git importance in team environments cannot be overstated. It's not just about tracking changes - it's about enabling asynchronous collaboration at scale. In our 50-person engineering team, Git workflows determine how fast we can ship features. We use trunk-based development with short-lived feature branches, which minimizes merge conflicts and integration issues. Protected branches with required status checks ensure no untested code reaches production. The ability to work offline is crucial during flights or in areas with poor connectivity. Git's efficiency with large repositories is also important - we have a monorepo with 500,000+ lines of code, and Git handles it smoothly. Commands like 'git grep' for searching codebase, 'git show' for inspecting specific commits, and 'git log --graph' for visualizing branch history are part of my daily workflow. For onboarding new developers, Git history serves as a learning tool - they can see how features evolved, understand decision-making through commit messages and PR discussions, and learn coding standards by reviewing approved pull requests.",
+    "label": "strong",
+    "score": 85
+  },
+  {
+    "id": 50,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git represents a fundamental shift from centralized version control systems. Its distributed nature means every clone is a full backup, every developer has complete history, and work continues even if central servers fail. I've used Git for everything from solo projects to coordinating work across international teams. The merge strategies (recursive, octopus, ours, subtree) provide flexibility for different scenarios. Recently, I used 'git subtree' to incorporate a third-party library directly into our repository while maintaining the ability to pull upstream updates. Git also excels at handling binary files through LFS (Large File Storage), which we use for design assets and documentation. The importance extends to legal and compliance - our Git history serves as evidence of code provenance and intellectual property creation dates. We've used Git history in patent applications and contract disputes. For security, signed commits ensure code authenticity - all commits to our main branch require GPG signatures, proving they came from authorized developers. This level of auditability and security is essential in regulated industries.",
+    "label": "strong",
+    "score": 84
+  },
+  {
+    "id": 51,
+    "question": "Explain Git version control and its importance",
+    "answer": "As a senior developer, I spend significant time in Git beyond just coding. I review dozens of pull requests weekly, each requiring careful examination of diffs, commit structure, and test coverage. Git's diff algorithms are sophisticated - they detect moved code blocks, ignore whitespace changes when requested, and highlight actual logic changes. The importance of Git for code review culture is immense - it creates a natural checkpoint where multiple eyes examine code before it affects production. I use GitHub's suggested changes feature in PR reviews to propose specific fixes, which the author can apply with one click. Git also enables experimentation - I regularly create experimental branches to test architectural changes or performance optimizations. If they work out, they merge back; if not, I delete the branch with no impact. The psychological safety of knowing any change is reversible encourages innovation and reduces fear of breaking things. Our deployment pipeline is entirely Git-driven - pushing to specific branches triggers automated tests, security scans, and eventual deployment through GitOps principles.",
+    "label": "strong",
+    "score": 83
+  },
+  {
+    "id": 52,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git has transformed from a version control tool into our team's collaboration platform. Beyond tracking code, we use Git for infrastructure-as-code (Terraform), configuration management (Ansible), documentation (Markdown), and even database migrations. The ability to treat everything as code, version it, and track changes provides consistency across our entire stack. Git hooks enable quality gates - pre-commit hooks run linters, pre-push hooks run unit tests, and server-side hooks enforce branch policies. The importance for knowledge management is often overlooked - our Git repository with good commit messages and PR descriptions serves as institutional memory. When someone asks why we implemented something a certain way, we can find the PR discussion from two years ago explaining the decision. I've also used 'git annotate' to understand code context when refactoring legacy systems. For security, Git enables rapid vulnerability patching - when a dependency vulnerability is announced, we can search our entire codebase history for usage, patch it, and deploy quickly. The complete audit trail means we can prove to auditors exactly when vulnerabilities were addressed.",
+    "label": "strong",
+    "score": 82
+  },
+  {
+    "id": 53,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git is a version control system that tracks changes to code over time. It's important because it allows multiple developers to work on the same project simultaneously. You can create branches to work on new features without affecting the main code. When you're done, you merge your branch back into the main branch. Git also provides a history of all changes, so you can see who made what changes and when. If something breaks, you can revert to a previous version. It's widely used in the industry and integrates with platforms like GitHub and GitLab for collaboration.",
+    "label": "average",
+    "score": 61
+  },
+  {
+    "id": 54,
+    "question": "Explain Git version control and its importance",
+    "answer": "Version control with Git helps teams collaborate on code efficiently. The main commands include git clone, git add, git commit, and git push. Branching allows developers to work on features independently. When multiple people edit the same file, Git helps resolve conflicts. It's important for maintaining code history and enabling rollbacks if issues occur. Most companies use Git for their software development projects. GitHub and GitLab are popular platforms that provide additional features like pull requests and issue tracking on top of Git.",
+    "label": "average",
+    "score": 59
+  },
+  {
+    "id": 55,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git tracks changes to your code and makes collaboration easier. You can create branches for new features and merge them when ready. It's important because it prevents code from being lost and allows you to undo mistakes. Git also helps with code review through pull requests. Most modern development teams use Git as their version control system. It stores the complete history of your project, which is useful for understanding how code evolved over time. Commands like commit, push, and pull are used regularly.",
+    "label": "average",
+    "score": 57
+  },
+  {
+    "id": 56,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git is essential for software development teams. It allows tracking of code changes, branching for feature development, and merging changes back together. The distributed nature of Git means everyone has a full copy of the repository. This provides redundancy and allows offline work. Git is important for maintaining project history, facilitating collaboration, and enabling continuous integration and deployment. Most developers use Git daily through commands or GUI tools. Platforms like GitHub provide additional collaboration features.",
+    "label": "average",
+    "score": 62
+  },
+  {
+    "id": 57,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git helps manage source code in software projects. It tracks every change made to files and who made them. Branching allows multiple developers to work simultaneously without conflicts. When you're ready, you merge branches together. If there are conflicts, Git shows them and you resolve manually. The importance lies in collaboration, history tracking, and the ability to revert changes. Git also integrates with CI/CD pipelines for automated testing and deployment. Most tech companies require Git knowledge from their developers.",
+    "label": "average",
+    "score": 60
+  },
+  {
+    "id": 58,
+    "question": "Explain Git version control and its importance",
+    "answer": "Version control with Git is crucial for team-based development. It allows creating branches for new work, committing changes with messages describing what was done, and pushing to remote repositories. Pull requests enable code review before merging. Git is important because it maintains complete project history, facilitates collaboration across teams, and provides safety through the ability to undo changes. Commands like git status, git log, and git diff help understand the current state and history of the repository.",
+    "label": "average",
+    "score": 58
+  },
+  {
+    "id": 59,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git is a tool that tracks code changes and helps developers collaborate. You make changes locally, commit them, and push to a shared repository. Other developers can pull your changes and merge them with their work. It's important for keeping track of project history and enabling multiple people to work together. Git branches allow working on features without affecting the main code. Most software projects use Git because it's reliable and widely supported by various platforms and tools.",
+    "label": "average",
+    "score": 56
+  },
+  {
+    "id": 60,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git provides version control capabilities that are essential in modern development. It tracks every modification to the codebase, allowing teams to collaborate effectively. Developers can work on separate branches and merge their work later. The importance includes maintaining code history, enabling rollbacks, facilitating code reviews, and supporting continuous integration workflows. Git also provides distributed architecture, meaning each developer has a complete copy of the repository. This redundancy and flexibility make it the industry standard for version control.",
+    "label": "average",
+    "score": 63
+  },
+  {
+    "id": 61,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git tracks changes in code and lets multiple people work together. Branches let you work on features separately. It's important for keeping code safe and organized. You can see the history of changes and revert if needed. GitHub is a platform that uses Git. Most developers use Git because it's the standard tool for version control in the industry.",
+    "label": "average",
+    "score": 54
+  },
+  {
+    "id": 62,
+    "question": "Explain Git version control and its importance",
+    "answer": "Version control with Git helps manage code changes over time. It's important for collaboration and tracking who made what changes. You can create branches, commit your work, and merge it back. Git also allows reverting to previous versions if something breaks. It's widely used and most companies expect developers to know it. The distributed nature means you have a local copy of the entire repository.",
+    "label": "average",
+    "score": 58
+  },
+  {
+    "id": 63,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git is a version control system. It tracks code changes and helps with collaboration. I think it's important for teams.",
+    "label": "weak",
+    "score": 24
+  },
+  {
+    "id": 64,
+    "question": "Explain Git version control and its importance",
+    "answer": "I'm not super familiar with Git but I know it's used for tracking code. Maybe it's like saving different versions?",
+    "label": "weak",
+    "score": 19
+  },
+  {
+    "id": 65,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git helps with code somehow. I think you use commands like commit and push. Not really sure about the details.",
+    "label": "weak",
+    "score": 21
+  },
+  {
+    "id": 66,
+    "question": "Explain Git version control and its importance",
+    "answer": "I guess Git is important for developers to work together on projects. It probably tracks changes.",
+    "label": "weak",
+    "score": 18
+  },
+  {
+    "id": 67,
+    "question": "Explain Git version control and its importance",
+    "answer": "Version control is about managing code. Git is a tool for that. It's probably important but I don't know much about it.",
+    "label": "weak",
+    "score": 22
+  },
+  {
+    "id": 68,
+    "question": "Explain Git version control and its importance",
+    "answer": "Git is used by programmers. I think it saves your work or something like that.",
+    "label": "weak",
+    "score": 16
+  },
+  {
+    "id": 69,
+    "question": "Explain Git version control and its importance",
+    "answer": "I've heard of Git but never really used it much. It has something to do with code management.",
+    "label": "weak",
+    "score": 20
+  },
+  {
+    "id": 70,
+    "question": "Explain Git version control and its importance",
+    "answer": "Maybe Git is like GitHub? I'm not sure about the difference or why it's important.",
+    "label": "weak",
+    "score": 17
+  },
+  {
+    "id": 71,
+    "question": "Explain Git version control and its importance",
+    "answer": "I think Git tracks code changes. Not really sure how it works or why people use it.",
+    "label": "weak",
+    "score": 19
+  },
+  {
+    "id": 72,
+    "question": "Explain Git version control and its importance",
+    "answer": "Version control... I guess it controls versions of code? Git must be a tool for that.",
+    "label": "weak",
+    "score": 15
+  },
+  {
+    "id": 73,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC (Model-View-Controller) is an architectural pattern that separates application logic into three interconnected components, promoting modularity and testability. The Model represents data and business logic, encapsulating database interactions, validation rules, and business processes. The View handles presentation and user interface, rendering data from the Model without containing business logic. The Controller acts as an intermediary, processing user input, invoking Model operations, and selecting appropriate Views. In a recent e-commerce project, I implemented MVC using Spring Boot. The Product Model handled inventory data with JPA annotations, validating stock levels and pricing rules. The ProductController exposed REST endpoints for CRUD operations, handling HTTP requests and responses with appropriate status codes. The View layer was a React SPA consuming the API, completely decoupled from backend logic. This separation enabled parallel development - backend and frontend teams worked independently. When business requirements changed (adding multi-currency support), we modified only the Model and Controller without touching Views. Testing was straightforward - Models had unit tests for business logic, Controllers had integration tests for API contracts, and Views had component tests. The pattern also enabled multiple presentation layers - we later added a mobile app and admin dashboard, both consuming the same Controllers. MVC's primary benefit is maintainability through separation of concerns, making code more understandable and modifications less risky.",
+    "label": "strong",
+    "score": 96
+  },
+  {
+    "id": 74,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC architecture fundamentally changes how we structure applications by enforcing clear boundaries between data, presentation, and logic. In my experience with Django (which uses MVT - Model-View-Template, a variant of MVC), the separation becomes evident immediately. Models define database schemas using Python classes - I created a User Model with fields for authentication, profile data, and relationships to other entities. Django's ORM automatically handles SQL generation, migrations, and query optimization. The View layer (equivalent to Controller in traditional MVC) contains business logic. For a user registration workflow, the View validates input, checks for existing users, creates accounts, sends verification emails, and returns appropriate responses. This logic is completely independent of how data is presented. Templates (the View in traditional MVC) receive context data from Views and render HTML without direct database access. This separation enabled us to later add an API for mobile apps by creating new Views that returned JSON instead of HTML, reusing all Model logic. The power of MVC is evident in refactoring - when we switched databases from PostgreSQL to MongoDB for specific microservices, only Models changed. Views and Templates remained untouched. For testing, this architecture is ideal - Models have unit tests verifying business rules, Views have integration tests ensuring correct behavior, and Templates can be tested independently with mock data.",
+    "label": "strong",
+    "score": 93
+  },
+  {
+    "id": 75,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC addresses the fundamental challenge of managing complexity in software applications. Without clear separation, code becomes a tangled mess where business logic, database queries, and HTML rendering are interwoven, making maintenance nightmarish. In a legacy project I inherited, everything was in single PHP files - database queries embedded in HTML with business logic scattered throughout. Refactoring to MVC took three months but was transformative. We created Models for each entity (User, Order, Product) that handled all database operations and data validation. Controllers processed HTTP requests, invoked Model methods, and passed data to Views. Views became pure templates with no logic beyond rendering. The benefits were immediate - bug fix time decreased 60% because finding relevant code was straightforward. Adding new features became faster because developers knew exactly where code belonged. When we needed to add an API alongside the web interface, we created new Controllers returning JSON while reusing all Model logic. The MVC pattern also improved our team's collaboration - junior developers could work on Views without risking business logic bugs, while senior developers focused on complex Model and Controller code. For testing, we achieved 80% code coverage because isolated components were easy to test. When frameworks like Laravel enforced MVC, the benefits compounded - convention over configuration meant less decision fatigue and more consistent codebases across projects.",
+    "label": "strong",
+    "score": 91
+  },
+  {
+    "id": 76,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC is more than a pattern - it's a philosophy about managing change in software systems. In a content management system I built, the MVC architecture enabled incredible flexibility. The Model layer contained all content operations - CRUD operations, version control, permissions, and search indexing. When we needed to switch from MySQL to Elasticsearch for better search, only Models changed. The Controller layer handled all request routing, authentication, authorization, and business workflows. When product requirements changed (adding multi-tenancy), we modified Controllers to include tenant context in all operations. The View layer rendered content in HTML, but adding new output formats (PDF, EPUB, JSON feed) required only new Views, no changes to Models or Controllers. This architecture also enabled progressive enhancement - we built a basic web interface first, then added AJAX for better UX, then developed a native mobile app, all consuming the same backend. For performance optimization, we could cache at each layer independently - Model results cached in Redis, Controller responses cached in Varnish, and Views cached with CDN. Testing became systematic - Models had comprehensive unit tests for data operations, Controllers had integration tests for workflows, and Views had snapshot tests for rendering. The MVC pattern's greatest strength is it forces developers to think about separation of concerns from day one, preventing the architectural rot that plagues projects without clear structure.",
+    "label": "strong",
+    "score": 90
+  },
+  {
+    "id": 77,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "Understanding MVC deeply requires seeing beyond the textbook definition to its practical implications. In Rails applications I've built, ActiveRecord Models aren't just database wrappers - they're rich domain objects with validations, callbacks, associations, and business logic. A User Model might validate email format, hash passwords before saving, have associations to Posts and Comments, and include methods like `full_name` or `active?`. This encapsulation means the rest of the application interacts with clean, high-level APIs rather than raw database operations. Controllers in Rails are thin - they handle HTTP concerns, invoke Model methods, and render responses. A typical Controller action: authenticate user, find requested resource, call Model method, handle success/failure, render View. This simplicity makes Controllers easy to test and understand. Views are templates enhanced with helpers for common rendering tasks. The view never queries the database directly or contains business logic. When building real-time features, we added Action Cable alongside traditional MVC - the architecture accommodated WebSockets naturally because business logic remained in Models. For scaling, MVC's separation enabled horizontal scaling - we could add more web servers (Controllers + Views) without touching the database layer, and optimize Model queries independently. The pattern also facilitated code reuse - we extracted Models into gems shared across microservices, ensuring consistent business rules everywhere.",
+    "label": "strong",
+    "score": 89
+  },
+  {
+    "id": 78,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC architecture in modern frameworks goes beyond simple separation - it creates a mental model for organizing code. In an Express.js application, I structured the project with Models using Mongoose for MongoDB schemas and data validation, Controllers handling route logic and coordinating between Models and Views, and Views using EJS templates for server-side rendering. The real power emerged when requirements evolved. Initially, we had a traditional web app. When mobile apps were needed, we created API Controllers returning JSON, reusing all Model logic. When we added real-time notifications, we created Socket Controllers, again reusing Models. The architecture scaled conceptually - each new interface was just new Controllers and Views. For testing, we used TDD with Models tested via unit tests ensuring data integrity and business rules, Controllers tested via integration tests simulating HTTP requests, and Views tested via snapshot tests catching rendering regressions. The separation also improved security - we could implement middleware in Controllers for authentication and authorization without cluttering Model code. For performance, we added caching at the Controller level for expensive queries, and implemented view caching for static content. When we refactored from monolith to microservices, MVC made it straightforward - we extracted Model + Controller pairs into separate services, each with its own database, while maintaining the same API contracts that Views depended on.",
+    "label": "strong",
+    "score": 88
+  },
+  {
+    "id": 79,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC pattern's elegance lies in its clear delineation of responsibilities. In a Flask application serving as a learning management system, Models represented courses, students, and enrollments with SQLAlchemy ORM. These Models weren't passive data structures - they contained business logic like enrollment eligibility checking, grade calculation, and progress tracking. Controllers were Flask routes that handled user interactions - enrolling in courses, submitting assignments, viewing grades. Each Controller function had clear steps: validate input, check permissions, invoke Model methods, handle exceptions, return response. Views were Jinja2 templates rendering student dashboards, course listings, and grade reports. The separation enabled iterative development - we built Models first with comprehensive test coverage, ensuring business rules were correct before any UI existed. Then Controllers were developed and tested via API calls. Finally, Views were designed. This sequence reduced rework because business logic was stable before UI development began. When stakeholders requested a mobile app, we built new Views (React Native) consuming existing Controllers. When a grading algorithm changed, only the Model's calculation method needed modification. For deployment, MVC enabled component-level scaling - we could scale View servers independently from Controller servers, and optimize database (Model layer) separately. The pattern also improved onboarding - new developers understood 'Models = data, Controllers = logic, Views = presentation' immediately.",
+    "label": "strong",
+    "score": 87
+  },
+  {
+    "id": 80,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC architecture provides cognitive scaffolding for developers to organize complex systems. In an ASP.NET Core project, implementing MVC with Entity Framework illustrated the pattern's strengths. Models defined with C# classes and data annotations represented our domain - Products, Orders, Customers with relationships and validation rules. Entity Framework handled database migrations automatically. Controllers inherited from ControllerBase, providing HTTP-specific functionality. Each Controller action followed the pattern: receive request, validate input, call Model methods, return View or redirect. Dependency injection made Controllers testable by mocking Model dependencies. Views used Razor syntax for server-side rendering with strong typing - the View knew exactly what Model data it would receive, catching errors at compile time rather than runtime. The architecture enabled sophisticated features like model binding (automatic conversion of HTTP data to Model objects), validation attributes ensuring data integrity, and filter attributes for cross-cutting concerns like logging and authentication. For REST APIs, we used the same Controllers with [ApiController] attribute, returning JSON instead of Views. The separation meant changes to API response format didn't affect web UI. For a reporting feature requiring complex queries, we created specialized read Models (CQRS pattern) alongside standard Models, all fitting within MVC structure. The pattern's maturity in .NET ecosystem meant excellent tooling - EF Migrations for Models, routing middleware for Controllers, and tag helpers for Views.",
+    "label": "strong",
+    "score": 86
+  },
+  {
+    "id": 81,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "The MVC pattern has evolved beyond web applications into a foundational principle for UI architecture generally. In a Vue.js SPA, I adapted MVC concepts - Vuex store served as the Model layer managing application state with mutations and actions encapsulating business logic. Vue components acted as Controller-Views, handling user interactions and rendering. This hybrid approach maintained MVC's core benefit of separation while accommodating reactive frameworks. Components dispatched actions to the store (Model), which updated state, triggering component re-renders (View updates). For complex business logic, we created service modules that components called before dispatching actions, further separating concerns. The architecture enabled time-travel debugging - because state changes went through the Model layer, we could replay actions and inspect state at any point. For testing, we unit-tested store modules (Models) independently, component-tested Vue components with mocked stores, and integration-tested the full stack. When product requirements shifted to SSR for SEO, Nuxt.js accommodated MVC thinking - stores remained the same, components gained server-side lifecycle hooks, but the mental model persisted. The pattern's flexibility allowed incorporating modern concepts like reactive state management while maintaining the clarity MVC provides. For team communication, describing components as 'Controller-View' and store as 'Model' provided shared vocabulary that transcended framework specifics.",
+    "label": "strong",
+    "score": 85
+  },
+  {
+    "id": 82,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC architecture remains relevant because it solves timeless problems in software design. In a GraphQL API with React frontend, MVC principles adapted naturally. GraphQL resolvers acted as Controllers, processing queries and mutations, coordinating data fetching. The database layer with Prisma ORM represented Models, encapsulating data access and business logic. React components were Views, rendering UI based on data from resolvers. The separation meant we could optimize each layer independently - adding DataLoader in resolvers for batching queries (Controller optimization), indexing database tables (Model optimization), and implementing code splitting in React (View optimization). When we added subscriptions for real-time features, resolvers handled subscription logic, Models provided the data stream, and React components subscribed to updates. The architecture accommodated GraphQL's flexible querying - resolvers determined what data to fetch based on query shape, Models provided that data efficiently, and Views rendered results. For testing, integration tests verified resolver behavior, unit tests ensured Model business logic correctness, and React Testing Library tested component rendering and interaction. MVC's separation of concerns meant adding features like caching, authentication, and rate limiting had clear implementation locations. The pattern proved that good architecture transcends specific technologies - MVC principles apply whether building traditional web apps, SPAs, mobile apps, or APIs.",
+    "label": "strong",
+    "score": 84
+  },
+  {
+    "id": 83,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC is an architecture pattern that separates applications into three components: Model, View, and Controller. The Model handles data and business logic, typically interacting with the database. The View is responsible for displaying data to users, usually through HTML templates. The Controller receives user input, processes it, and updates the Model and View accordingly. This separation makes applications easier to maintain and test. For example, if you need to change the UI, you only modify the View without touching business logic. Most web frameworks like Django, Rails, and Laravel implement MVC or similar patterns. It promotes code organization and allows multiple developers to work on different parts simultaneously.",
+    "label": "average",
+    "score": 64
+  },
+  {
+    "id": 84,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "The MVC pattern divides an application into three parts. Models represent your data structures and database tables. Views are what users see - the HTML pages or UI components. Controllers handle the logic between Models and Views. When a user clicks a button, the Controller processes that action, updates the Model if needed, and tells the View what to display. This separation is important because it makes code more organized and easier to test. You can change how data looks without changing how it's stored or processed. MVC is used in many popular frameworks and is considered a best practice in web development.",
+    "label": "average",
+    "score": 61
+  },
+  {
+    "id": 85,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC stands for Model-View-Controller. It's a way to organize code in applications. The Model deals with data - getting it from the database, saving changes, and validating input. The View handles presentation - displaying data in a user-friendly format. The Controller connects them - it receives requests, calls the appropriate Model methods, and returns the right View. This pattern makes applications easier to maintain because each component has a specific purpose. If you need to change the database structure, you modify the Model. If you need to change the layout, you modify the View. Controllers orchestrate everything.",
+    "label": "average",
+    "score": 59
+  },
+  {
+    "id": 86,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "The MVC architecture separates concerns in an application. Models contain business logic and data access code. They interact with databases and enforce validation rules. Views are templates that render data for users. They should be logic-free, only displaying information. Controllers handle HTTP requests, call Model methods to retrieve or update data, and pass that data to Views for rendering. This separation helps with testing - you can test Models independently of UI. It also allows multiple interfaces (web, mobile, API) to share the same Models and Controllers while having different Views. MVC has been around for decades and is well-understood in the developer community.",
+    "label": "average",
+    "score": 63
+  },
+  {
+    "id": 87,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC is a design pattern for structuring applications. The Model represents data and business rules. It handles database operations and data validation. The View is the user interface, displaying information from the Model. It doesn't contain business logic. The Controller acts as a coordinator, receiving user input, updating the Model, and selecting the appropriate View to render. This pattern promotes separation of concerns, making code more maintainable. Different team members can work on Models, Views, and Controllers simultaneously without conflicts. It's commonly used in web frameworks and is considered a fundamental pattern in software architecture.",
+    "label": "average",
+    "score": 62
+  },
+  {
+    "id": 88,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC divides applications into three layers. Models manage data and business logic. They're typically mapped to database tables. Views present data to users through HTML or other formats. Controllers process user requests, interact with Models to fetch or update data, and decide which View to render. The benefit is clear separation - changes to one component don't necessarily affect others. For instance, you can redesign the UI without touching Models or Controllers. Testing becomes easier because components are isolated. MVC is used in frameworks like Spring MVC, ASP.NET MVC, and Ruby on Rails.",
+    "label": "average",
+    "score": 60
+  },
+  {
+    "id": 89,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "The MVC pattern organizes code into Models for data, Views for UI, and Controllers for logic. Models handle database interactions and enforce business rules. Views render data without containing logic. Controllers receive requests, call Models to get data, and pass it to Views. This separation makes applications more maintainable and testable. Different developers can work on different layers without interfering with each other. If requirements change, you know exactly which component to modify. MVC has been widely adopted and is considered a standard approach for web application development.",
+    "label": "average",
+    "score": 58
+  },
+  {
+    "id": 90,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC architecture separates an application into Model, View, and Controller. The Model represents your data and business logic. The View is responsible for displaying that data. The Controller handles user interactions and updates the Model and View accordingly. This pattern improves code organization and makes testing easier. You can modify the presentation layer without affecting data logic. Most modern web frameworks implement some form of MVC. It's a fundamental concept that helps developers structure their applications logically and maintain them over time.",
+    "label": "average",
+    "score": 57
+  },
+  {
+    "id": 91,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC splits applications into three parts: Model (data), View (presentation), and Controller (logic). Models interact with databases and contain business rules. Views display information to users. Controllers process requests and coordinate between Models and Views. This separation makes code more organized and easier to maintain. Testing is simpler because components are decoupled. Multiple interfaces can share the same backend logic. MVC is a proven pattern used in many frameworks and is important for developers to understand.",
+    "label": "average",
+    "score": 56
+  },
+  {
+    "id": 92,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "The MVC pattern helps organize application code. Models handle data and business logic. Views present information to users. Controllers manage the flow between Models and Views, processing user input and determining what to display. This structure makes applications more maintainable because each component has a clear responsibility. Changes to one layer don't require changes to others. MVC is widely used in web development and is supported by most major frameworks. Understanding MVC is essential for building well-structured applications.",
+    "label": "average",
+    "score": 59
+  },
+  {
+    "id": 93,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC is about separating code into models, views, and controllers. Models are for data. Views are for display. Controllers connect them.",
+    "label": "weak",
+    "score": 26
+  },
+  {
+    "id": 94,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "I think MVC means Model-View-Controller. Not really sure how it works exactly.",
+    "label": "weak",
+    "score": 18
+  },
+  {
+    "id": 95,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC is a pattern used in web development. Models handle data, views show it, controllers do the logic.",
+    "label": "weak",
+    "score": 23
+  },
+  {
+    "id": 96,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "Maybe MVC helps organize code? I've heard of it but don't really understand the details.",
+    "label": "weak",
+    "score": 19
+  },
+  {
+    "id": 97,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "I guess MVC is some kind of architecture thing. Not sure what each part does.",
+    "label": "weak",
+    "score": 17
+  },
+  {
+    "id": 98,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC has three parts but I don't remember what they are or how they work together.",
+    "label": "weak",
+    "score": 20
+  },
+  {
+    "id": 99,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "I think MVC is important for web apps but I'm not familiar with the specifics.",
+    "label": "weak",
+    "score": 21
+  },
+  {
+    "id": 100,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "Model, View, Controller - that's MVC. Don't know much more than that.",
+    "label": "weak",
+    "score": 16
+  },
+  {
+    "id": 101,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "MVC is a way to structure code. Something about separating concerns.",
+    "label": "weak",
+    "score": 19
+  },
+  {
+    "id": 102,
+    "question": "Explain the MVC architecture pattern",
+    "answer": "I've seen MVC mentioned in frameworks but never really understood what it means.",
+    "label": "weak",
+    "score": 18
+  },
+  {
+    "id": 103,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Query optimization requires systematic analysis and multiple strategies. When facing a slow query in production affecting checkout performance (15-second response time), I used a methodical approach. First, I ran EXPLAIN ANALYZE to understand the query plan - it revealed sequential scans on a 2M-row orders table due to missing indexes. The query joined orders, products, and users tables with WHERE clauses on order_date and user region. I created a composite index on (order_date, user_id) which reduced lookup time by 80%. However, the query still took 3 seconds. Next, I examined the JOIN strategy - it was joining all 2M orders before filtering. I rewrote the query to filter first, then join, reducing the working set from 2M rows to 50K. I also denormalized frequently accessed user region data into the orders table to eliminate one JOIN entirely. For the product pricing calculation, which ran a subquery for each row, I converted it to a single JOIN with aggregation. I then analyzed query statistics - 40% of time was spent sorting results. Adding an index matching the ORDER BY clause eliminated the sort operation. For caching, I implemented Redis caching for product pricing data which rarely changed, reducing database hits by 60%. I also implemented database connection pooling to reduce connection overhead and configured query result caching in PostgreSQL. Finally, I set up monitoring with slow query logs, alerting when queries exceeded 1 second. The result: 15 seconds reduced to 200ms, checkout completion rate increased 25%. For future optimization, I implemented query performance testing in CI/CD to catch regressions before production.",
+    "label": "strong",
+    "score": 97
+  },
+  {
+    "id": 104,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Database query optimization is both art and science. Recently, I optimized a dashboard query that aggregated user activity data - initial response time was 45 seconds for 6 months of data. My approach started with profiling using pgBadger to analyze the entire query workload, not just this single query. I discovered the slow query was one of many hitting the same table without proper indexes. I created an execution plan visualization showing the query was performing hash joins on enormous datasets. The core issue was a correlated subquery fetching latest activity per user - this ran once per user (500K iterations). I refactored this to use window functions (ROW_NUMBER OVER) which processed all rows in a single scan, reducing execution from 45s to 8s. The query still had performance issues at peak traffic. I implemented partitioning on the activity table by month, as queries typically filtered by date range. This reduced the working dataset from 100M rows to 3-4M rows per query. I also implemented materialized views for common aggregations, refreshing hourly via cron jobs. For real-time requirements, I used PostgreSQL's incremental materialized view refresh feature. To handle concurrent queries, I implemented statement timeout limits and connection pooling with PgBouncer. For reads that didn't need absolute consistency, I added read replicas and directed analytics queries there, removing 70% of load from the primary database. I optimized the application layer by implementing proper pagination with cursor-based paging instead of OFFSET, which degraded with page number. Finally, I added comprehensive monitoring with query performance insights, tracking P99 latency, and alerting on anomalies.",
+    "label": "strong",
+    "score": 94
+  },
+  {
+    "id": 105,
+    "question": "How would you optimize a slow database query?",
+    "answer": "My query optimization process follows a structured methodology. For a reporting query taking 2 minutes to generate financial reports, I started with EXPLAIN to identify bottlenecks. The query had multiple CTEs (Common Table Expressions) that weren't being optimized effectively by the query planner. I refactored to use temporary tables for intermediate results, giving the optimizer better statistics. The query performed full table scans on the transactions table (50M rows). I created indexes on filtered columns (transaction_date, status, user_id) using BRIN indexes for time-series data, which were more compact than B-tree for date ranges. For complex aggregations across multiple tables, I identified that the query was computing sums and counts repeatedly. I restructured it to compute once and JOIN results. When dealing with large text fields being fetched unnecessarily, I modified the SELECT clause to retrieve only required columns, reducing data transfer by 80%. I also discovered the query was using DISTINCT to remove duplicates caused by incorrect JOINs. Fixing the JOIN logic eliminated the need for DISTINCT, improving performance significantly. For queries requiring fuzzy matching or full-text search, I implemented PostgreSQL's trigram indexes and full-text search indexes. To handle spiky traffic, I implemented query result caching in Redis with smart invalidation - cache keys included query parameters and were invalidated when underlying data changed. I also optimized at the connection level by using persistent connections and properly closing unused connections. The combination reduced report generation from 2 minutes to 3 seconds, making real-time reporting feasible.",
+    "label": "strong",
+    "score": 92
+  },
+  {
+    "id": 106,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Query optimization requires understanding both database internals and application requirements. When optimizing a search feature that was timing out, I began by reproducing the issue in a development environment with production-like data. The query searched across multiple text columns using ILIKE with wildcards (%search%). This prevented index usage, causing full table scans. I implemented full-text search with tsvector and GIN indexes, improving search speed by 100x. The query also joined multiple tables to fetch related data for display. I analyzed whether all joins were necessary - 3 of 5 joins were for data not displayed initially. I implemented lazy loading, fetching only core data in the initial query and retrieving additional data on demand. For data that rarely changed, like category names and user roles, I implemented application-level caching with a 1-hour TTL. This eliminated unnecessary database round trips. The query also sorted results by computed values (like popularity score), which was expensive. I created a computed column updated via triggers when base data changed, then indexed it for fast sorting. For queries with many optional filters (user's advanced search), I implemented dynamic query building that only added JOINs and WHERE clauses for filters actually used, rather than always joining all tables. To handle aggregation queries (counts, sums) efficiently, I implemented summary tables updated in real-time via database triggers and batch jobs. For read-heavy workloads, I configured query caching at multiple levels - database query cache for identical queries, application-level result caching for parameterized queries, and CDN caching for public data. The final optimization involved database configuration tuning - increasing work_mem for sort operations, adjusting effective_cache_size, and optimizing checkpoint settings.",
+    "label": "strong",
+    "score": 91
+  },
+  {
+    "id": 107,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Optimizing slow queries demands both immediate fixes and systemic improvements. In a recent project, user profile pages loaded in 8 seconds due to complex queries. My diagnostic process: 1) Enable slow query logging to identify problematic queries. 2) Use EXPLAIN ANALYZE to see execution plans. 3) Check for missing indexes - discovered 15 queries doing sequential scans. 4) Analyze query structure for anti-patterns like SELECT *, N+1 queries, or unnecessary subqueries. For the profile page specifically, the query fetched user data with counts of posts, comments, and likes via correlated subqueries. I refactored to use LEFT JOINs with GROUP BY, computing all counts in one pass. This reduced database round trips from 4 to 1. I also implemented database connection pooling to reduce connection establishment overhead. For frequently accessed data like user profile summaries, I implemented Redis caching with cache-aside pattern - check cache first, fetch from database on miss, populate cache. Cache invalidation was handled via application events when profile data changed. For queries that were inherently slow due to data size (like generating annual reports), I implemented asynchronous job processing with background workers. Users got immediate response, and results were delivered via email when ready. I also optimized by introducing database views for complex queries used in multiple places, and materialized views for expensive aggregations. At the infrastructure level, I upgraded to SSD storage and increased database memory allocation. Monitoring was enhanced with query performance dashboards showing P50, P95, P99 latencies. The comprehensive approach reduced average page load from 8s to 400ms.",
+    "label": "strong",
+    "score": 90
+  },
+  {
+    "id": 108,
+    "question": "How would you optimize a slow database query?",
+    "answer": "I would start by analyzing the slow query with EXPLAIN to see the execution plan. Common issues include missing indexes, full table scans, or inefficient joins. Adding appropriate indexes on columns used in WHERE clauses and JOIN conditions usually provides significant improvement. I'd also check if the query is fetching more data than necessary and optimize the SELECT statement. For complex queries with multiple joins, I might break them into smaller queries or use temporary tables. Caching frequently accessed data in Redis or Memcached can reduce database load. If the table has too many rows, partitioning might help. I'd also look at query structure - subqueries can sometimes be rewritten as joins for better performance. Database configuration tuning like adjusting buffer sizes and connection pools can also help. Finally, monitoring query performance over time helps identify patterns and prevent future issues.",
+    "label": "average",
+    "score": 65
+  },
+  {
+    "id": 109,
+    "question": "How would you optimize a slow database query?",
+    "answer": "First, I would use database profiling tools to identify which queries are slow. Then I'd examine the execution plan to see where time is being spent. Adding indexes is usually the first step - index columns that appear in WHERE clauses and JOIN conditions. I'd also review the query structure to ensure it's written efficiently. Sometimes rewriting subqueries as joins improves performance. For frequently run queries, caching results can help. I might also consider denormalizing data if joins are causing slowness. Query optimization might involve selecting only necessary columns instead of using SELECT *. If the table is very large, archiving old data or partitioning can improve performance. Database configuration settings should also be reviewed and optimized based on workload.",
+    "label": "average",
+    "score": 62
+  },
+  {
+    "id": 110,
+    "question": "How would you optimize a slow database query?",
+    "answer": "To optimize a slow query, I'd start by running EXPLAIN to understand what the database is doing. Look for full table scans and add indexes where needed. Make sure the query isn't fetching unnecessary data. Check if there are multiple joins that could be reduced. Consider using query caching for frequently accessed data. If aggregations are slow, summary tables might help. Review database statistics and ensure they're up to date. Sometimes the query itself needs rewriting - replacing subqueries with joins or vice versa depending on the situation. Monitoring tools can help identify slow queries automatically.",
+    "label": "average",
+    "score": 58
+  },
+  {
+    "id": 111,
+    "question": "How would you optimize a slow database query?",
+    "answer": "I would analyze the query execution plan first to identify bottlenecks. Adding appropriate indexes is often the most effective optimization. I'd also examine whether the query can be simplified or rewritten more efficiently. Caching results for queries that don't change frequently can significantly reduce database load. For very large datasets, consider pagination or limiting results. Database configuration tuning might be necessary depending on the specific workload. Using connection pooling helps manage database connections efficiently. If possible, moving some computation to the application layer can reduce database processing.",
+    "label": "average",
+    "score": 60
+  },
+  {
+    "id": 112,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Query optimization starts with understanding what makes it slow. Use EXPLAIN ANALYZE to see the execution plan. Add indexes on frequently queried columns. Make sure you're only selecting the columns you need. Optimize joins and consider whether they're all necessary. For complex queries, breaking them into smaller parts might help. Implement caching where appropriate. Keep database statistics updated so the query optimizer makes good decisions. Consider using database views for frequently used complex queries. Monitor query performance to catch issues early.",
+    "label": "average",
+    "score": 59
+  },
+  {
+    "id": 113,
+    "question": "How would you optimize a slow database query?",
+    "answer": "I'd first identify the slow query using profiling tools. Then check if indexes exist on the columns being queried. Add indexes if they're missing. Review the query structure for inefficiencies like unnecessary joins or subqueries. Consider caching if the data doesn't change frequently. Optimize the database configuration settings. Use EXPLAIN to understand how the database executes the query. Ensure database statistics are current. For large result sets, implement pagination. Sometimes moving logic from database to application code can improve performance.",
+    "label": "average",
+    "score": 57
+  },
+  {
+    "id": 114,
+    "question": "How would you optimize a slow database query?",
+    "answer": "To optimize slow queries, start with analyzing execution plans. Add indexes strategically on columns used in filtering and joining. Rewrite inefficient queries when possible. Use caching for data that's read frequently but updated rarely. Consider database configuration optimization. Limit the amount of data returned by queries. Use proper JOIN types based on requirements. Monitor query performance regularly. Implement connection pooling to reduce overhead. For very complex queries, breaking them down or using temporary tables might help.",
+    "label": "average",
+    "score": 61
+  },
+  {
+    "id": 115,
+    "question": "How would you optimize a slow database query?",
+    "answer": "First step is identifying which query is slow using monitoring tools. Then use EXPLAIN to see how it's being executed. Add missing indexes on frequently filtered columns. Make sure the query isn't doing unnecessary work. Check if joins can be optimized or reduced. Implement caching where it makes sense. Review database settings and tune them for your workload. Consider partitioning large tables. Keep statistics up to date so the query planner makes good choices. Test changes in a development environment before applying to production.",
+    "label": "average",
+    "score": 60
+  },
+  {
+    "id": 116,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Optimization involves several steps. Identify slow queries through logging or monitoring. Use execution plan analysis to find bottlenecks. Add indexes where they'll help most. Rewrite queries to be more efficient. Cache results when appropriate. Tune database configuration parameters. Ensure you're only fetching necessary data. Consider denormalization for read-heavy workloads. Use appropriate JOIN strategies. Keep database statistics current. Implement these changes incrementally and measure impact.",
+    "label": "average",
+    "score": 58
+  },
+  {
+    "id": 117,
+    "question": "How would you optimize a slow database query?",
+    "answer": "I'd probably look at the query and try to make it faster. Maybe add some indexes or something. Check if there are unnecessary parts that can be removed. Caching might help if the data doesn't change much. Not really sure about the specific steps but I know optimization is important.",
+    "label": "weak",
+    "score": 28
+  },
+  {
+    "id": 118,
+    "question": "How would you optimize a slow database query?",
+    "answer": "I think you use EXPLAIN to see what's wrong. Then maybe add indexes? Not sure about the details.",
+    "label": "weak",
+    "score": 22
+  },
+  {
+    "id": 119,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Maybe check if the query is written inefficiently? I guess indexes help with performance.",
+    "label": "weak",
+    "score": 19
+  },
+  {
+    "id": 120,
+    "question": "How would you optimize a slow database query?",
+    "answer": "I don't really know how to optimize queries. Maybe ask a senior developer for help?",
+    "label": "weak",
+    "score": 17
+  },
+  {
+    "id": 121,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Probably look at the database and see what's slow. Add indexes or make the query simpler.",
+    "label": "weak",
+    "score": 21
+  },
+  {
+    "id": 122,
+    "question": "How would you optimize a slow database query?",
+    "answer": "I think there are tools for this but I'm not familiar with them. Indexes are important I guess.",
+    "label": "weak",
+    "score": 20
+  },
+  {
+    "id": 123,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Not sure. Maybe rewrite the query or use caching? I haven't done much database optimization.",
+    "label": "weak",
+    "score": 18
+  },
+  {
+    "id": 124,
+    "question": "How would you optimize a slow database query?",
+    "answer": "I guess you analyze it somehow and make changes. Don't know the specific techniques.",
+    "label": "weak",
+    "score": 16
+  },
+  {
+    "id": 125,
+    "question": "How would you optimize a slow database query?",
+    "answer": "Maybe there's a command to check query performance? I'm not really experienced with this.",
+    "label": "weak",
+    "score": 19
+  },
+  {
+    "id": 126,
+    "question": "How would you optimize a slow database query?",
+    "answer": "I think optimization is important but I don't know the process. Probably involves indexes.",
+    "label": "weak",
+    "score": 18
+  }
+]

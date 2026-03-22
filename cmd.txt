@@ -1,0 +1,10 @@
+first go to ml service cmd:cd ml_service
+TO Run the model:python -m uvicorn ml_api:app --reload --port 8000  
+to Run the web:npm run dev
+
+to check the model accuracy or to train:
+# Navigate to ml_training folder
+cd C:\Users\HP\interview-analyzer\ml_training
+
+# Run training script (will show accuracy at the end)
+python train_model.py
