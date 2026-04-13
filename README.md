@@ -1,4 +1,4 @@
-\# 🎯 AI Interview Answer Analyzer
+ 🎯 AI Interview Answer Analyzer
 
 
 
@@ -6,83 +6,83 @@ Machine learning system that evaluates interview answers using fine-tuned Distil
 
 
 
-\## 📊 Performance
+📊 Performance
 
 
 
-\- \*\*Test Accuracy:\*\* 96.15%
+Test Accuracy: 96.15%
 
-\- \*\*Model:\*\* DistilBERT (66M parameters)
+Model: DistilBERT (66M parameters)
 
-\- \*\*Dataset:\*\* 126 manually curated samples
+Dataset: 126 manually curated samples
 
-\- \*\*Response Time:\*\* \~300ms on CPU
-
-
-
-\## ✨ Features
+Response Time:~300ms on CPU
 
 
 
-\- ✅ Real-time classification (weak/average/strong)
-
-\- ✅ Numerical scoring (0-100 scale)
-
-\- ✅ Domain-specific keyword analysis
-
-\- ✅ Weak language pattern detection
-
-\- ✅ Actionable improvement suggestions
-
-\- ✅ Modern web interface
+✨ Features
 
 
 
-\## 🏗️ Tech Stack
+ ✅ Real-time classification (weak/average/strong)
+
+ ✅ Numerical scoring (0-100 scale)
+
+ ✅ Domain-specific keyword analysis
+
+ ✅ Weak language pattern detection
+
+ ✅ Actionable improvement suggestions
+
+ ✅ Modern web interface
 
 
 
-\*\*Backend:\*\*
-
-\- Python 3.13
-
-\- PyTorch 2.10.0
-
-\- Transformers 5.1.0 (Hugging Face)
-
-\- FastAPI
-
-\- DistilBERT
+ 🏗️ Tech Stack
 
 
 
-\*\*Frontend:\*\*
+Backend:
 
-\- Next.js 14
+ Python 3.13
 
-\- React 18
+ PyTorch 2.10.0
 
-\- TypeScript
+Transformers 5.1.0 (Hugging Face)
 
-\- Tailwind CSS
+FastAPI
 
-
-
-\## 🚀 Quick Start
+ DistilBERT
 
 
 
-\### Prerequisites
+Frontend:
 
-\- Python 3.10+
+ Next.js 14
 
-\- Node.js 20.x LTS
+ React 18
 
-\- 8GB RAM minimum
+ TypeScript
+
+ Tailwind CSS
 
 
 
-\### Backend Setup
+ 🚀 Quick Start
+
+
+
+ Prerequisites
+
+ Python 3.10+
+
+ Node.js 20.x LTS
+
+ 8GB RAM minimum
+
+
+
+ Backend Setup
 
 ```bash
 
@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 
 
-\# Train the model (8 minutes)
+Train the model (8 minutes)
 
 cd ../ml\_training
 
@@ -100,7 +100,7 @@ python train\_model.py
 
 
 
-\# Start API server
+ Start API server
 
 cd ../ml\_service
 
@@ -110,7 +110,7 @@ python -m uvicorn ml\_api:app --reload --port 8000
 
 
 
-\### Frontend Setup
+ Frontend Setup
 
 ```bash
 
@@ -124,15 +124,15 @@ npm run dev
 
 
 
-\*\*Access Application:\*\* http://localhost:3000
+Access Application: http://localhost:3000
 
 
 
-\## 📈 Model Performance
+ 📈 Model Performance
 
 
 
-\### Classification Report
+Classification Report
 
 
 
@@ -148,11 +148,11 @@ npm run dev
 
 
 
-\*\*Overall Accuracy:\*\* 96.15% (25/26 correct predictions)
+Overall Accuracy: 96.15% (25/26 correct predictions)
 
 
 
-\### Confusion Matrix
+Confusion Matrix
 
 ```
 
@@ -176,7 +176,7 @@ Only 1 error: 1 average answer misclassified as weak
 
 
 
-\## 📁 Project Structure
+ 📁 Project Structure
 
 ```
 
@@ -214,7 +214,7 @@ interview-analyzer/
 
 
 
-\## 🎓 Academic Project
+ 🎓 Academic Project
 
 
 
@@ -236,11 +236,11 @@ Final Year B.Tech Computer Science Project - 2024
 
 | BiLSTM | 76% | +20% |
 
-| \*\*Our DistilBERT\*\* | \*\*96.15%\*\* | \*\*Baseline\*\* |
+| Our DistilBERT | 96.15%| Baseline |
 
 
 
-\## 📄 License
+📄 License
 
 
 
@@ -248,7 +248,7 @@ MIT License
 
 
 
-\## 👤 Author
+ 👤 Author
 
 
 
@@ -256,9 +256,9 @@ Vishaal Vinayak
 
 
 
-\---
 
 
 
-\*\*Note:\*\* The trained model files are not included due to size (268MB). Run `python train\_model.py` to train the model locally.
+
+Note: The trained model files are not included due to size (268MB). Run `python train\_model.py` to train the model locally.
 
